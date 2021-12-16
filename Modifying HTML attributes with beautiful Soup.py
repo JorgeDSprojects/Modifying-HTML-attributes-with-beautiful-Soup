@@ -56,6 +56,7 @@ for file_ori in files_origin:
             img_source = soup.find_all('img')
             link_source = soup.find_all('link')
             
+            #You can add the type of element and the attribute you want to change
             if link_source:
                 for item in link_source:
                     item_href = item.attrs['href']    
